@@ -4,11 +4,11 @@ import { users } from '../data/mockData';
 import { User, Shield, ToggleLeft, ToggleRight } from 'lucide-react';
 
 const roleColors: Record<string, string> = {
-  'Owner': 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
-  'Accounts': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
-  'Production': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
-  'Packing': 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
-  'Sales': 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300',
+  'Owner': 'bg-purple-100 text-purple-800',
+  'Accounts': 'bg-blue-100 text-blue-800',
+  'Production': 'bg-orange-100 text-orange-800',
+  'Packing': 'bg-emerald-100 text-emerald-800',
+  'Sales': 'bg-teal-100 text-teal-800',
 };
 
 export function Settings() {
