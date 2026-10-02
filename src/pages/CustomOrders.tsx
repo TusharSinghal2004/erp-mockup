@@ -103,10 +103,12 @@ export function CustomOrders() {
                   <StatusBadge status={co.status} />
                 </div>
 
-                <div className="p-4 rounded-xl border font-mono text-xs leading-relaxed whitespace-pre-wrap mb-4"
-                  style={{ borderColor: 'var(--border-color)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>
-                  {co.draftQuoteEmail}
-                </div>
+                <textarea
+                  className="w-full p-4 rounded-xl border font-mono text-xs leading-relaxed mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-[var(--accent-light)] transition-shadow"
+                  style={{ borderColor: 'var(--border-color)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
+                  defaultValue={co.draftQuoteEmail}
+                  rows={8}
+                />
 
                 <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 mb-4 flex items-center gap-2">
                   <Mail className="w-4 h-4 text-amber-600 flex-shrink-0" />

@@ -94,10 +94,12 @@ export function Enquiries() {
                     <StatusBadge status={enq.status} />
                   </div>
 
-                  <div className="p-4 rounded-xl border font-mono text-xs leading-relaxed whitespace-pre-wrap mb-4"
-                    style={{ borderColor: 'var(--border-color)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>
-                    {enq.draftReply}
-                  </div>
+                  <textarea
+                    className="w-full p-4 rounded-xl border font-mono text-xs leading-relaxed mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-[var(--accent-light)] transition-shadow"
+                    style={{ borderColor: 'var(--border-color)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
+                    defaultValue={enq.draftReply}
+                    rows={8}
+                  />
 
                   <div className="p-3 rounded-lg mb-4" style={{ background: 'var(--bg-secondary)' }}>
                     <div className="flex justify-between text-sm">
